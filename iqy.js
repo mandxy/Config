@@ -6,7 +6,7 @@ let obj = JSON.parse(body);
 
 // 修改每个 bookerList 对象中的 remainStockQuantity 和 receivestatus
 obj.data.parentActivityDTO.bookerList.forEach(item => {
-    item.remainStockQuantity = 1;
+    item.remainStockQuantity = 99;
     item.receivestatus = 1;
 });
 
