@@ -1,4 +1,7 @@
+// 重写规则 ^https:\/\/act\.vip\.iqiyi\.com\/cloud-party\/activity\/v2\/detail\?page=30.*$ url script-response-body https://raw.githubusercontent.com/mandxy/Config/main/iqy_ybc.js
+// 爱奇艺修改云包场返回数据，显示库存和可领取
 // 获取响应体
+
 let body = $response.body;
 
 // 将响应体解析为 JSON 对象
